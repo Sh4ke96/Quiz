@@ -24,6 +24,8 @@ body .quiz__page .result__box {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 body .quiz__page .btn {
@@ -46,6 +48,8 @@ body .quiz__page .btn:hover {
 
 body .quiz__page .info__box {
   display: none;
+  -webkit-transform: translate(-50%, -50%) scale(0.9);
+          transform: translate(-50%, -50%) scale(0.9);
   width: 320px;
   background: #fff;
   border-radius: 5px;
@@ -188,15 +192,6 @@ body .quiz__page .quiz__box .quiz__box-section .section__options-list .section__
   border-radius: 5px;
   padding: 0.4rem 0.8rem;
   margin-bottom: 1.2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   cursor: pointer;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
