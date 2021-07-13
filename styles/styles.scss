@@ -22,7 +22,7 @@ body {
       font-size: 1.3rem;
       font-weight: bolder;
       color: #007bff;
-      padding: 0.4rem 0.8rem;
+      padding: 0.5rem 1rem;
       outline: none;
       border: none;
       border-radius: 5px;
@@ -31,7 +31,11 @@ body {
       box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
         rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     }
+    .btn:hover {
+      color: #0263ca;
+    }
     .info__box {
+      display: none;
       width: 320px;
       background: #fff;
       border-radius: 5px;
@@ -67,15 +71,27 @@ body {
         justify-content: space-around;
         align-items: center;
         border-top: 1px solid lightgrey;
+        transition: all 0.3s ease;
         .quit__btn {
+          border: 2px solid #007bff;
+          color: #007bff;
+          font-size: 1rem;
+          padding: 0.3rem 0.6rem;
+        }
+        .quit__btn:hover {
           background: #007bff;
           color: #fff;
-          font-size: 1rem;
         }
         .restart__btn {
           background: #007bff;
           color: #fff;
+          border: 2px solid #007bff;
           font-size: 1rem;
+          padding: 0.3rem 0.6rem;
+        }
+        .restart__btn:hover {
+          background: #0263ca;
+          border: 2px solid #0263ca;
         }
       }
     }
