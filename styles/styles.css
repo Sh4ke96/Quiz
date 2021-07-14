@@ -270,6 +270,10 @@ body .quiz__page .quiz__box .quiz__box-footer .next__btn {
   background: #007bff;
 }
 
+body .quiz__page .quiz__box .quiz__box-footer .next__btn:hover {
+  background: #0263ca;
+}
+
 body .quiz__page .result__box {
   display: none !important;
   background: #fff;
