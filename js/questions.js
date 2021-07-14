@@ -9,7 +9,7 @@ let questions = [
     numb: 2,
     question: "How many stripes are there on the US flag?",
     answer: "13",
-    options: ["12", "10", "9", "15"],
+    options: ["13", "10", "9", "15"],
   },
   {
     numb: 3,

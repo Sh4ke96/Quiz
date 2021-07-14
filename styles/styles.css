@@ -215,13 +215,13 @@ body .quiz__page .quiz__box .quiz__box-section .section__options-list .section__
   font-size: 0.85rem;
 }
 
-body .quiz__page .quiz__box .quiz__box-section .section__options-list .section__option .correct {
-  color: #23903c;
-  border-color: #23903c;
-  background: #d4edda;
+body .quiz__page .quiz__box .quiz__box-section .section__options-list .correct {
+  color: #23903c !important;
+  border-color: #23903c !important;
+  background: #d4edda !important;
 }
 
-body .quiz__page .quiz__box .quiz__box-section .section__options-list .section__option .wrong {
+body .quiz__page .quiz__box .quiz__box-section .section__options-list .wrong {
   color: #a42834;
   border-color: #a42834;
   background: #f8d7da;

@@ -157,16 +157,16 @@ body {
               align-items: center;
               font-size: 0.85rem;
             }
-            .correct {
-              color: #23903c;
-              border-color: #23903c;
-              background: #d4edda;
-            }
-            .wrong {
-              color: #a42834;
-              border-color: #a42834;
-              background: #f8d7da;
-            }
+          }
+          .correct {
+            color: #23903c !important;
+            border-color: #23903c !important;
+            background: #d4edda !important;
+          }
+          .wrong {
+            color: #a42834;
+            border-color: #a42834;
+            background: #f8d7da;
           }
           .section__option:hover {
             background: #cce5ff;
