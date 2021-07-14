@@ -184,6 +184,7 @@ body .quiz__page .quiz__box .quiz__box-section .section__text .section__question
 body .quiz__page .quiz__box .quiz__box-section .section__options-list {
   padding: 1rem 0;
   display: block;
+  background: #fff;
 }
 
 body .quiz__page .quiz__box .quiz__box-section .section__options-list .section__option {

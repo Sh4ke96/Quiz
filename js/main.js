@@ -15,14 +15,14 @@ continue_btn.onclick = () => {
   const quiz_box = document.querySelector(".quiz__box");
   quiz_box.style.display = "block";
   info_box.style.display = "none";
-  showQuestions(2);
+  showQuestions(3);
 };
 
 let que_count = 0;
 
 function showQuestions(index) {
   const que_title = document.querySelector(".section__question");
-  const que_options = document.querySelector(".section__option");
+  const que_options = document.querySelector(".section__options-list");
   let que_tag = "<span>" + questions[index].question + "</span>";
   let option_tag =
     '<div class="section__option">' +
