@@ -168,6 +168,9 @@ body {
             border-color: #a42834;
             background: #f8d7da;
           }
+          .disabled {
+            pointer-events: none;
+          }
           .section__option:hover {
             background: #cce5ff;
             border-color: #b8daff;

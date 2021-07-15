@@ -227,6 +227,10 @@ body .quiz__page .quiz__box .quiz__box-section .section__options-list .wrong {
   background: #f8d7da;
 }
 
+body .quiz__page .quiz__box .quiz__box-section .section__options-list .disabled {
+  pointer-events: none;
+}
+
 body .quiz__page .quiz__box .quiz__box-section .section__options-list .section__option:hover {
   background: #cce5ff;
   border-color: #b8daff;

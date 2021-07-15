@@ -20,7 +20,7 @@ let questions = [
   {
     numb: 4,
     question: "What’s the smallest country in the world?",
-    answer: "Constantinople",
+    answer: "The Vatican",
     options: ["Monaco", "The Vatican", "San Marino", "Malta"],
   },
   {
@@ -44,8 +44,8 @@ let questions = [
   {
     numb: 8,
     question: "Where was the first modern Olympic Games held?",
-    answer: "Athens, 1896",
-    options: ["Rome 1892", "Barcelona 1900", "Paris 1888", "Athens, 1896"],
+    answer: "Athens 1896",
+    options: ["Rome 1892", "Barcelona 1900", "Paris 1888", "Athens 1896"],
   },
   {
     numb: 9,
@@ -56,7 +56,7 @@ let questions = [
   {
     numb: 10,
     question: "Which football team is known as ‘The Red Devils’?",
-    answer: "11",
+    answer: "Manchester United",
     options: ["Manchester United", "Manchester City", "Arsenal", "Chelsea"],
   },
 ];

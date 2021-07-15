@@ -2,6 +2,7 @@ const start_btn = document.querySelector(".start__btn");
 const info_box = document.querySelector(".info__box");
 const exit_btn = info_box.querySelector(".quit__btn");
 const continue_btn = info_box.querySelector(".restart__btn");
+const que_options = document.querySelector(".section__options-list");
 
 start_btn.onclick = () => {
   info_box.style.display = "block";
@@ -36,7 +37,6 @@ next_btn.onclick = () => {
 
 function showQuestions(index) {
   const que_title = document.querySelector(".section__question");
-  const que_options = document.querySelector(".section__options-list");
   let que_tag =
     "<span>" +
     questions[index].numb +
@@ -67,12 +67,19 @@ function showQuestions(index) {
 function optionSelected(answer) {
   let userAnswer = answer.textContent;
   let correctAnswer = questions[que_count].answer;
+  let allOptions = que_options.children.length;
   if (userAnswer == correctAnswer) {
     answer.classList.add("correct");
-    console.log("Answer is correct");
   } else {
     answer.classList.add("wrong");
-    console.log("Wrong Answer");
+  }
+  for (let i = 0; i < allOptions; i++) {
+    if (que_options.children[i].textContent == correctAnswer) {
+      que_options.children[i].setAttribute("class", "section__option correct");
+    }
+  }
+  for (let i = 0; i < allOptions; i++) {
+    que_options.children[i].classList.add("disabled");
   }
 }
 
