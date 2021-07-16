@@ -86,14 +86,14 @@ body {
           background: #007bff;
           color: #fff;
         }
-        .restart__btn {
+        .continue__btn {
           background: #007bff;
           color: #fff;
           border: 2px solid #007bff;
           font-size: 1rem;
           padding: 0.3rem 0.6rem;
         }
-        .restart__btn:hover {
+        .continue__btn:hover {
           background: #0263ca;
           border: 2px solid #0263ca;
         }
@@ -197,6 +197,7 @@ body {
           }
         }
         .next__btn {
+          display: none;
           font-size: 0.9rem;
           color: #fff;
           background: #007bff;
@@ -207,11 +208,10 @@ body {
       }
     }
     .result__box {
-      display: none !important;
+      display: none;
       background: #fff;
       border-radius: 5px;
       width: 320px;
-      display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
@@ -229,6 +229,7 @@ body {
         padding: 1rem;
         .complete__score {
           margin-top: 0.5rem;
+          text-align: center;
           .complete__score-color {
             color: #007bff;
             font-weight: bolder;

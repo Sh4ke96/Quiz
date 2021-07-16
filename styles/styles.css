@@ -119,7 +119,7 @@ body .quiz__page .info__box .info__buttons .quit__btn:hover {
   color: #fff;
 }
 
-body .quiz__page .info__box .info__buttons .restart__btn {
+body .quiz__page .info__box .info__buttons .continue__btn {
   background: #007bff;
   color: #fff;
   border: 2px solid #007bff;
@@ -127,7 +127,7 @@ body .quiz__page .info__box .info__buttons .restart__btn {
   padding: 0.3rem 0.6rem;
 }
 
-body .quiz__page .info__box .info__buttons .restart__btn:hover {
+body .quiz__page .info__box .info__buttons .continue__btn:hover {
   background: #0263ca;
   border: 2px solid #0263ca;
 }
@@ -269,6 +269,7 @@ body .quiz__page .quiz__box .quiz__box-footer .total__que .total__que-color {
 }
 
 body .quiz__page .quiz__box .quiz__box-footer .next__btn {
+  display: none;
   font-size: 0.9rem;
   color: #fff;
   background: #007bff;
@@ -279,13 +280,10 @@ body .quiz__page .quiz__box .quiz__box-footer .next__btn:hover {
 }
 
 body .quiz__page .result__box {
-  display: none !important;
+  display: none;
   background: #fff;
   border-radius: 5px;
   width: 320px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -322,6 +320,7 @@ body .quiz__page .result__box .result__text {
 
 body .quiz__page .result__box .result__text .complete__score {
   margin-top: 0.5rem;
+  text-align: center;
 }
 
 body .quiz__page .result__box .result__text .complete__score .complete__score-color {
