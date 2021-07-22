@@ -163,6 +163,7 @@ function startTimer(time) {
     if (time < 0) {
       clearInterval(counter);
       timeCount.textContent = "Time's up";
+      next_btn.style.display = "block";
     }
   }
 }
