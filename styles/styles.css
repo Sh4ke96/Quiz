@@ -328,7 +328,7 @@ body .quiz__page .result__box .result__text .complete__score .complete__score-co
   font-weight: bolder;
 }
 
-body .quiz__page .result__box .result__buttons {
+body .quiz__page .result__box .result__button {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -339,28 +339,15 @@ body .quiz__page .result__box .result__buttons {
   margin-top: 1rem;
 }
 
-body .quiz__page .result__box .result__buttons .quit__btn {
+body .quiz__page .result__box .result__button .quit__btn {
   border: 2px solid #007bff;
   color: #007bff;
   font-size: 1rem;
   padding: 0.3rem 0.6rem;
 }
 
-body .quiz__page .result__box .result__buttons .quit__btn:hover {
+body .quiz__page .result__box .result__button .quit__btn:hover {
   background: #007bff;
   color: #fff;
-}
-
-body .quiz__page .result__box .result__buttons .restart__btn {
-  background: #007bff;
-  color: #fff;
-  border: 2px solid #007bff;
-  font-size: 1rem;
-  padding: 0.3rem 0.6rem;
-}
-
-body .quiz__page .result__box .result__buttons .restart__btn:hover {
-  background: #0263ca;
-  border: 2px solid #0263ca;
 }
 /*# sourceMappingURL=styles.css.map */

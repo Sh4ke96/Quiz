@@ -236,7 +236,7 @@ body {
           }
         }
       }
-      .result__buttons {
+      .result__button {
         width: 100%;
         display: flex;
         justify-content: space-evenly;
@@ -250,17 +250,6 @@ body {
         .quit__btn:hover {
           background: #007bff;
           color: #fff;
-        }
-        .restart__btn {
-          background: #007bff;
-          color: #fff;
-          border: 2px solid #007bff;
-          font-size: 1rem;
-          padding: 0.3rem 0.6rem;
-        }
-        .restart__btn:hover {
-          background: #0263ca;
-          border: 2px solid #0263ca;
         }
       }
     }

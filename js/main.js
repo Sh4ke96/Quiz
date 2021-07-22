@@ -30,22 +30,7 @@ let userScore = 0;
 
 const next_btn = document.querySelector(".next__btn");
 const result_box = document.querySelector(".result__box");
-const restart_btn = result_box.querySelector(".restart__btn");
 const quit_btn = result_box.querySelector(".quit__btn");
-
-restart_btn.onclick = () => {
-  quiz_box.style.display = "block";
-  result_box.style.display = "none";
-  let que_count = 0;
-  let que_numb = 1;
-  let timeValue = 10;
-  let userScore = 0;
-  showQuestions(que_count);
-  queCounter(que_numb);
-  clearInterval(counter);
-  startTimer(timeValue);
-  next_btn.style.display = "none";
-};
 
 quit_btn.onclick = () => {
   window.location.reload();
@@ -60,9 +45,15 @@ next_btn.onclick = () => {
     clearInterval(counter);
     startTimer(timeValue);
     next_btn.style.display = "none";
+    console.log("Udało się!");
+    console.log(que_count);
+    console.log(questions.length);
   } else {
     clearInterval(counter);
     showResultBox();
+    console.log("Nie udało się!");
+    console.log(que_count);
+    console.log(questions.length);
   }
 };
 
@@ -151,11 +142,11 @@ function showResultBox() {
     scoreText.innerHTML = scoreTag;
   } else {
     let scoreTag =
-      'Sorry, You got <span class="complete__score-color">' +
+      'Unfortunate, You got <span class="complete__score-color">' +
       userScore +
       '</span> out of <span class="complete__score-color">' +
       questions.length +
-      "</span> points.";
+      "</span> points. Try again and good luck.";
     scoreText.innerHTML = scoreTag;
   }
 }
