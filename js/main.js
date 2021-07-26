@@ -5,38 +5,31 @@ const exit_btn = info_box.querySelector(".quit__btn");
 const continue_btn = info_box.querySelector(".continue__btn");
 const que_options = document.querySelector(".section__options-list");
 const timeCount = document.querySelector(".time__text");
+const next_btn = document.querySelector(".next__btn");
+const result_box = document.querySelector(".result__box");
+const quit_btn = result_box.querySelector(".quit__btn");
 
-start_btn.onclick = () => {
+start_btn.addEventListener("click", () => {
   info_box.style.display = "block";
-};
+});
 
-exit_btn.onclick = () => {
+exit_btn.addEventListener("click", () => {
   info_box.style.display = "none";
-};
+});
 
-continue_btn.onclick = () => {
+quit_btn.addEventListener("click", () => {
+  window.location.reload();
+});
+
+continue_btn.addEventListener("click", () => {
   quiz_box.style.display = "block";
   info_box.style.display = "none";
   showQuestions(0);
   queCounter(1);
   startTimer(10);
-};
+});
 
-let que_count = 0;
-let que_numb = 1;
-let counter;
-let timeValue = 10;
-let userScore = 0;
-
-const next_btn = document.querySelector(".next__btn");
-const result_box = document.querySelector(".result__box");
-const quit_btn = result_box.querySelector(".quit__btn");
-
-quit_btn.onclick = () => {
-  window.location.reload();
-};
-
-next_btn.onclick = () => {
+next_btn.addEventListener("click", () => {
   if (que_count < questions.length - 1) {
     que_count++;
     que_numb++;
@@ -55,7 +48,13 @@ next_btn.onclick = () => {
     console.log(que_count);
     console.log(questions.length);
   }
-};
+});
+
+let que_count = 0;
+let que_numb = 1;
+let counter;
+let timeValue = 10;
+let userScore = 0;
 
 function showQuestions(index) {
   const que_title = document.querySelector(".section__question");
